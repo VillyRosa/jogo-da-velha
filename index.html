@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="casas" id="casa-1" onclick="ClickCasa1()">
+                <p class="jogadores" id="jogador-1">X</p>
+            </div>
+            <div class="casas" id="casa-2" onclick="ClickCasa2()">
+                <p class="jogadores" id="jogador-2">O</p>
+            </div>
+            <div class="casas" id="casa-3" onclick="ClickCasa3()"></div>
+            <div class="casas" id="casa-4" onclick="ClickCasa4()"></div>
+            <div class="casas" id="casa-5" onclick="ClickCasa5()"></div>
+            <div class="casas" id="casa-6" onclick="ClickCasa6()"></div>
+            <div class="casas" id="casa-7" onclick="ClickCasa7()"></div>
+            <div class="casas" id="casa-8" onclick="ClickCasa8()"></div>
+            <div class="casas" id="casa-9" onclick="ClickCasa9()"></div>
+
+            <div class="linhas-levantadas" id="linha-1"></div>
+            <div class="linhas-levantadas" id="linha-2"></div>
+            <div class="linhas-deitadas" id="linha-3"></div>
+            <div class="linhas-deitadas" id="linha-4"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;VillyRosa</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
