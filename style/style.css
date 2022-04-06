@@ -75,7 +75,22 @@ section .container #linha-4{
 }
 
 section .container .casas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogadores{
+    font-family: 'Press Start 2P', cursive;
     font-size: 50pt;
+}
+
+#jogador-1{
+    color: blue;
+}
+
+#jogador-2{
+    color: red;
 }
 
 footer{
