@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    background: rgb(138,43,226);
+    background: linear-gradient(180deg, rgba(138,43,226,1) 0%, rgba(50,7,89,1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    width: 530px;
+    height: 530px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .box {
+    width: 150px;
+    height: 150px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    cursor: pointer;
+}
+
+main .linehori {
+    position: absolute;
+    width: 580px;
+    height: 10px;
+    border-radius: 16px;
+    background-color: #111010;
+    box-shadow: 0 0 15px #111010;
+}
+
+main .line1 {
+    margin-top: -180px;
+}
+
+main .line2 {
+    margin-top: 175px;
+}
+
+main .linevert {
+    position: absolute;
+    width: 10px;
+    height: 580px;
+    border-radius: 16px;
+    background-color: #111010;
+    box-shadow: 0 0 15px #111010;
+}
+
+main .line3 {
+    margin-left: -180px;
+}
+
+main .line4 {
+    margin-left: 175px;
+}
+
+.container {
+    width: 500px;
+    height: 200px;
+    background-color: rgba(230, 54, 54, 0.733);
+    border-radius: 8px;
+    border: 3px solid black;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container h3 {
+    font-size: 25px;
+}
+
+.container button {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: rgb(157, 255, 0);
+    font-size: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        width: 330px;
+        height: 330px;
+    }
+
+    main .linehori {
+        width: 380px;
+        height: 6px;
+    }
+
+    main .line1 {
+        margin-top: -110px;
+    }
+    
+    main .line2 {
+        margin-top: 110px;
+    }
+
+    main .linevert {
+        height: 380px;
+        width: 6px;
+    }
+
+    main .line3 {
+        margin-left: -110px;
+    }
+    
+    main .line4 {
+        margin-left: 110px;
+    }
+
+    main .box {
+        width: 93px;
+        height: 93px;
+        font-size: 70px;
+    }
+
+    .container {
+        width: 300px;
+    }
+}
